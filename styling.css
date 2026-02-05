@@ -1,7 +1,4 @@
 
-header{
-    border-radius: 6px;
-}
 header nav{
     display: flex;
     justify-content: center;
@@ -20,13 +17,15 @@ a{
 a:hover{
    color: #1f0654;
     border-radius: 5px;
-   background-color: #c066b5;
+   background-color: #f0beea;
 }
 
 header{
     background-color: #1f0654;
     padding: 20px 0;
     text-align: center;
+    height: 150px;
+    border-radius: 6px;
 }
 
 .logo{
@@ -34,21 +33,169 @@ header{
     margin-bottom: 20px;
 }
 
-.welkom{
+.welkom h1{
     text-align: center;
     padding: 40px 20px;
+   
+}
+.welkom-border{
+    border-bottom: #000000 solid;
 }
 
 .welkom h1{
     font-size: 36px;
     color: #333;
+    
 }
- .ervaring{
+
+
+.foto-tekst img,.tekst-foto img{
+    width: 500px;
+    height: 400px;
+}
+
+.foto-tekst{
+display: flex;
+justify-content: space-around;
+}
+.tekst-foto {
+    display: flex;
+justify-content: space-around;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.foto-tekst h1{
+    margin:110px;
+}
+.tekst{
+    padding-left: 120px;
+    line-height: 25px;
+    font-style: normal;
+}
+
+.ervaring-titel{
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.ervaring-twee-kolommen{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px 40px 20px;
+}
+
+.ervaring-kolom{
+    width: 45%;
+}
+
+.ervaring-kolom img{
+    width: 500px;
+    height: 400px;
+}
+
+.tekst-rechts{
+    max-width: 500px;
+}
+
+.tekst-onder-foto{
+    line-height: 25px;
+    font-style: normal;
+    max-width: 500px;
+}
+.docenten{
     padding: 40px 20px;
     text-align: center;
 }
-
-.ervaring h2{
-    font-size: 24px;
+.docenten h2{
+    font-size: 32px;
     color: #333;
 }
+.docenten-fotos{
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.docenten-fotos img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.docenten-naam-fotos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Telefoon / kleine schermen */
+@media (max-width: 768px) {
+    header{
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .logo{
+        height: 50px;
+    }
+
+    header nav{
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    header nav a{
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .welkom h1{
+        font-size: 22px;
+        padding: 25px 15px;
+    }
+
+    .foto-tekst,
+    .tekst-foto{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .foto-tekst img,
+    .tekst-foto img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tekst-rechts,
+    .tekst-onder-foto{
+        max-width: 100%;
+    }
+
+    .foto-tekst h1{
+        margin: 15px 0;
+        font-size: 24px;
+    }
+
+    .docenten h2{
+        font-size: 24px;
+    }
+
+    .docenten-naam-fotos{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .docenten-fotos img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+

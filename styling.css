@@ -1,9 +1,21 @@
 
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
 header nav{
     display: flex;
     justify-content: center;
     gap: 30px;
-    
 }
 header nav a{
     color: white;
@@ -36,16 +48,18 @@ header{
 .welkom h1{
     text-align: center;
     padding: 40px 20px;
-   
-}
-.welkom-border{
-    border-bottom: #000000 solid;
-}
-
-.welkom h1{
     font-size: 36px;
     color: #333;
-    
+}
+
+.welkom-border{
+    border-bottom: 1px solid #000;
+}
+
+.welkom{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
 
@@ -55,12 +69,18 @@ header{
 }
 
 .foto-tekst{
-display: flex;
-justify-content: space-around;
-}
-.tekst-foto {
     display: flex;
-justify-content: space-around;
+    justify-content: space-around;
+    padding: 30px 0;
+    gap: 30px;
+}
+.tekst-foto{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    gap: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
 img{
@@ -68,32 +88,7 @@ img{
 }
 
 .foto-tekst h1{
-    margin:110px;
-}
-.tekst{
-    padding-left: 120px;
-    line-height: 25px;
-    font-style: normal;
-}
-
-.ervaring-titel{
-    text-align: center;
-    margin: 40px 0 20px 0;
-}
-
-.ervaring-twee-kolommen{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 20px 40px 20px;
-}
-
-.ervaring-kolom{
-    width: 45%;
-}
-
-.ervaring-kolom img{
-    width: 500px;
-    height: 400px;
+    margin: 110px;
 }
 
 .tekst-rechts{
@@ -106,12 +101,25 @@ img{
     max-width: 500px;
 }
 .docenten{
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 .docenten h2{
     font-size: 32px;
     color: #333;
+    margin: 0;
+}
+
+.Lessen{
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+.Lessen h2{
+    font-size: 32px;
+    color: #333;
+    margin: 0;
 }
 .docenten-fotos{
     display: block;
@@ -131,7 +139,128 @@ img{
     justify-content: space-evenly;
 }
 
-/* Telefoon / kleine schermen */
+.lessen{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.les{
+    color: #333;
+    padding: 15px 15px 15px 20px;
+    font-size: 16px;
+    min-width: 180px;
+    background-color: #e8d5f2;
+    border-left: 5px solid #1f0654;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.les i{
+    margin-bottom: 5px;
+    color: #1f0654;
+}
+
+.les-naam{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.les-code{
+    font-size: 13px;
+    color: #555;
+}
+
+.les-lokaal{
+    font-size: 14px;
+    color: #1f0654;
+}
+
+footer{
+    background-color: #1f0654;
+    margin-top: 50px;
+    color: aliceblue;
+    padding: 40px 20px 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.footer-titel{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.footer-kaart{
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.footer-kaart img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-kolom{
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-kolom h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer-kolom p{
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.contact-form input,
+.contact-form textarea{
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact-form button{
+    background-color: #f0beea;
+    color: #1f0654;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: #ffb3d9;
+}
+
 @media (max-width: 768px) {
     header{
         height: auto;
@@ -195,6 +324,15 @@ img{
     .docenten-fotos img{
         width: 120px;
         height: 120px;
+    }
+
+    .footer-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-kolom{
+        text-align: center;
     }
 }
 
